@@ -3,6 +3,8 @@ import { User, UserRole } from '../users/entities/user.entity';
 import { RequestPermission, RequestState } from './entities/request.entity';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
+import { CreateRequestDto } from './dto/create-request.dto';
+import { UpdateRequestDto } from './dto/update-request.dto';
 
 @Injectable()
 export class RequestsService {
